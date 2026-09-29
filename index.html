@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BeritaKita - Portal Berita Terkini</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <div class="top"><div class="wrap"><span id="tgl"></span><button class="mode" id="mode" type="button">Mode gelap</button></div></div>
+  <div class="brandrow"><div class="wrap">
+    <a class="logo" href="#" id="home">BeritaKita<small>Cepat, akurat, terpercaya</small></a>
+    <form class="search" id="cari" role="search"><input id="q" type="search" placeholder="Cari berita..." aria-label="Cari berita"><button type="submit">Cari</button></form>
+  </div></div>
+  <nav aria-label="Kategori"><div class="wrap" id="nav"></div></nav>
+</header>
+<div class="ticker"><div class="wrap"><b>TERKINI</b><a href="#" id="tk"></a></div></div>
+
+<main class="wrap">
+  <section class="hero" id="hero" aria-label="Berita utama"></section>
+  <div class="cols">
+    <section class="list" aria-live="polite"><h2 class="sec" id="jdl">Berita Terbaru</h2><div id="list"></div></section>
+    <aside class="pop">
+      <h2 class="sec">Terpopuler</h2><ol id="pop"></ol>
+      <h2 class="sec">Rubrik</h2><div class="tags" id="tags"></div>
+    </aside>
+  </div>
+</main>
+
+<footer><div class="wrap"><span>&copy; <span id="thn"></span> BeritaKita. Konten di halaman ini hanya contoh (dummy).</span><span>Redaksi &middot; Pedoman Media Siber &middot; Kontak</span></div></footer>
+
+<dialog id="dlg"><div class="dl"><button class="close" id="tutup" type="button">Tutup</button><div id="isi"></div></div></dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
